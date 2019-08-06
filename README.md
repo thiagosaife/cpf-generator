@@ -1,5 +1,5 @@
 # cpf-generator
-Javascript ES6 Class to generate valid CPFs document numbers
+Javascript ES6+ Class to generate valid CPFs document numbers
 
 ## Import or require.
 import CpfGenerator from 'CpfGenerator';
