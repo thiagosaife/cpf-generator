@@ -10,13 +10,13 @@ class CpfGenerator {
     const rn = [...Array(9)].map(() => random(9));
     let m1 = 1;
     let m2 = 2;
-    let d1 = rn.reduceRight((total, item) => {
+    let d1 = rn.reduceRight((total, number) => {
       m1 += 1;
-      return total + (item * m1);
+      return total + (number * m1);
     }, 0);
-    let d2 = rn.reduceRight((total, item) => {
+    let d2 = rn.reduceRight((total, number) => {
       m2 += 1;
-      return total + (item * m2);
+      return total + (number * m2);
     }, 0);
     d1 = 11 - (mod(d1, 11));
     if (d1 >= 10) d1 = 0;
